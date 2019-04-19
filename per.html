@@ -1,0 +1,105 @@
+<html>
+
+   <head>
+
+   	<link rel="stylesheet" type="text/css" href="input.css"/>
+    
+</head>
+
+  <body> 
+
+
+  	<table id="sk" class="container">
+        <form  method="post" action="per.php"  >
+ 
+
+			<th style="color: MidNightBlue"><b><i><font size="6">Personal Details : <br><br></i></b></font></th>
+
+
+
+
+			<tr>
+			<td><b><i><font size="4">First Name : </i></b></font></td>
+			<td><input type="text"  name = "FName" pattern="[A-Za-z ]{1,32}" class="last" required></td>
+			</tr>
+
+<br>
+
+<tr>
+<td><b><i><font size="4">Last Name : </td>
+<td><input type="text"  name = "LName" pattern="[A-Za-z ]{1,32}" class="last" required></td>
+</tr>
+
+
+<tr>
+<td><b><i><font size="4">Gender : </td>
+<td>
+<input type="radio" name="sex"  value="male" class="last" checked> Male
+<input type="radio" name="sex" value="female" class="last" > Female
+</td>
+</tr>
+
+
+<tr>
+<td><i><b><font size="4">DOB : </td>
+<td><input type="date" name="DOB" class="last" max="2003-12-31"></td>
+</tr>
+
+
+<tr>
+<td><b><i><font size="4">Email : </td>
+<td><input type="email" name="email" pattern="[a-z0-9._]+@[a-z0-9.]+\.[a-z]{2,}$" class="last" required></td>
+</tr>
+
+
+<tr>
+<td><b><i><font size="4">Mobile : </td>
+<td><input type="text"  name="mobile" pattern="[6789][0-9]{9}" class="last" required></td>
+</tr>
+
+
+<tr>
+<td><b><i><font size="4">Address : </td>
+<td><textarea cols="50" rows="5" class="last" name = "address" pattern="[A-Za-z0-9.-,_/ ].{1,200}" required></textarea> </td>
+</tr>
+
+
+<tr>
+<td><b><i><font size="4">City : </td>
+<td><input type="text" name="city" class="last" pattern="[^' ']+[A-Za-z]{1,32}" required></td>
+</tr><br><br>
+
+<tr >
+ <td><br><b><i><font size="4">Highest Education : </td>
+<td><select name="edu" class=last>
+  <option value="P.G">P.G</option>
+  <option  value="Graduation">Graduation</option>
+  <option  value="Intermediate">Intermediate</option>
+  <option  selected="selected" value="School">School</option>
+</select>
+</td>
+</tr><br><br>
+
+<tr align="center">
+<br>
+<td align = "left"><input type="reset" value="Reset" class="last"></td>
+<br>
+<td align ="right" ><input type="submit" value="Next" class="last"></td>
+</tr>
+
+
+</table>
+
+    
+<table class="close">
+  <tr>
+<td><a  href="close.php"><b><i><font size="3">logout</i></b></font></a>
+
+</td><br><br><br>
+</tr>
+</table>
+
+</form>
+</font>
+</body>
+</html>

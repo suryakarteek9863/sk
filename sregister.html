@@ -1,0 +1,52 @@
+<html>
+
+   <head>
+
+   	<link rel="stylesheet" type="text/css" href="input.css"/>
+   </head>
+
+  <body> 
+  	<table class="containerlogin">
+        <form  method="POST" action="sreg.php" >
+ 
+
+<th style="color: MidNightBlue"><b><i><font size="6">Student Registration : <br><br></i></b></font></th>
+
+
+<tr>
+<td><b><i><font size="4">First Name : </i></b></font><td>
+<td><input type="text" maxlength="32"  name = "FName" pattern="[A-Za-z ]{1,32}" class="last" required><td>
+</tr>
+
+<br>
+
+<tr>
+<td><b><i><font size="4">Last Name : <td>
+<td><input type="text" maxlength="32" name = "LName" pattern="[A-Za-z ]{1,32}" class="last" required><td>
+</tr>
+
+
+<tr>
+<td><b><i><font size="4">Email : <td>
+<td><input type="email" name="regemail" pattern="[a-z0-9._]+@[a-z0-9.]+\.[a-z]{2,}$" class="last" required><td>
+</tr>
+
+<tr>
+<td><b><i><font size="4">Password : <td>
+<td><input type="Password" name="regpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" class="last" required><td>
+</tr>
+
+
+<tr align="center">
+<td align = "left"><br><input type="reset" value="Reset" class="last" ><td>
+<td align ="right" ><br><input type="submit" value="Register" class="last"  ><td>
+</tr>
+
+
+
+
+</form>
+</font>
+</table>
+</body>
+</html>

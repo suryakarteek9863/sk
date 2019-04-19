@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<style type="text/css">
+.close{
+  position: absolute;
+   margin-left: 1400px;
+   margin-top: 10px;
+  max-width: 800px;
+  padding: 16px;
+  background:white;
+  opacity: 0.8;
+  filter: alpha(opacity=90);
+
+  border-radius: 12px;
+}
+
+
+
+		.tab{
+background:white;
+	opacity: 0.9;
+  filter: alpha(opacity=90);
+  border-radius: 20px;
+  position: absolute;
+  right: 420px;
+  margin: 50px;
+  max-width: 1000px;
+		}
+
+body{
+             background-image:url("http://localhost/project1/recbg.jpg");
+
+             background-repeat:no-repeat;
+             background-size:cover;
+            }
+      
+
+		
+		
+
+
+
+		.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+
+
+
+.submit {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: "none";
+  border: "black";
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 130px;
+  height: 60px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.submit span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.submit span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -5px;
+  transition: 0.5s;
+}
+
+.submit:hover span {
+  padding-right: 25px;
+}
+
+.submit:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+
+
+
+
+<body background="recbg.jpg">
+<form method="POST" action="filter.php">
+<table class ="tab" align="center">
+<th><h1>FILTERING</h1></th>
+<br><br>
+<tr><td><p><b><i><font size="6.5">Technical Skills : </b></i></p></font></td></tr>
+
+<tr><td><label><b><i><font size="4">C:</b></i></label>
+<!-- Rounded switch -->
+<label class="switch">
+<input type="checkbox" name="c">
+<span class="slider round"></span>
+</label> 
+
+<label><b><i><font size="4">C++:</b></i></label>
+<!-- Rounded switch -->
+<label class="switch">
+<input type="checkbox" name="c++">
+<span class="slider round"></span>
+</label> 
+
+<label><b><i><font size="4">java:</b></i></label>
+<!-- Rounded switch -->
+<label class="switch">
+<input type="checkbox" name=" java">
+<span class="slider round"></span>
+</label> 
+
+<label><b><i><font size="4">Python:</b></i></label>
+<!-- Rounded switch -->
+<label class="switch">
+<input type="checkbox" name="python">
+<span class="slider round"></span>
+</label> 
+
+<label><b><i><font size="4">SQL:</b></i></label>
+<!-- Rounded switch -->
+<label class="switch">
+<input type="checkbox" name="sql">
+<span class="slider round"></span>
+</label> </td></tr>
+
+<br>
+<br>
+
+
+
+<tr><td><p><b><i><font size="6.5">Work Experience : </b></i></p></td></tr>
+
+
+<tr><td><label><b><i><font size="4">1 Year</b></i></label></font>
+<!-- Rounded switch -->
+<label class="switch">
+<input type="radio" name="years" value="1">
+<span class="slider round"></span>
+</label> 
+
+<label><b><i><font size="4">2 Years</b></i></label>
+<!-- Rounded switch -->
+<label class="switch">
+<input type="radio" name="years" value="2">
+<span class="slider round"></span>
+</label> 
+
+<label><b><i><font size="4">3 Years</b></i></label>
+<!-- Rounded switch -->
+<label class="switch">
+<input type="radio" name="years" value="3">
+<span class="slider round"></span>
+</label> 
+
+<label><b><i><font size="4">4 Years</b></i></label>
+<!-- Rounded switch -->
+<label class="switch">
+<input type="radio" name="years" value="4">
+<span class="slider round"></span>
+</label> 
+
+<label><b><i><font size="4">None</b></i></label>
+<!-- Rounded switch -->
+<label class="switch">
+<input type="radio" name="years" value="0">
+<span class="slider round"></span>
+</label><br><br></td></tr>
+
+
+<tr><td><p><b><i><font size="6.5">B.Tech CGPA: </b></i></p></td></tr>
+
+
+<tr><td><label><b><i><font size="4">Greater than 7.0</b></i></label>
+<!-- Rounded switch -->
+<label class="switch">
+<input type="radio" name="marks" value="7">
+<span class="slider round"></span>
+</label> 
+
+<label><b><i><font size="4">Greater than 8.0</b></i></label>
+<!-- Rounded switch -->
+<label class="switch">
+<input type="radio" name="marks" value="8">
+<span class="slider round"></span>
+</label> 
+
+<label><b><i><font size="4">Greater than 9.0</b></i></label>
+<!-- Rounded switch -->
+<label class="switch">
+<input type="radio" name="marks" value="9">
+<span class="slider round"></span>
+</label>
+
+<label><b><i><font size="4">None</b></i></label>
+<!-- Rounded switch -->
+<label class="switch">
+<input type="radio" name="marks" value="none">
+<span class="slider round"></span>
+</label><br>
+<br>
+</td>
+</tr>
+<tr align="right"><td><br><button type="submit" class="submit" style="vertical-align:middle"><span>submit </span></button>
+</td></tr>
+
+
+</table>
+
+    
+<table class="close">
+  <tr>
+<td><a class="close" href="close.php"><b><i><font size="3">logout</i></b></font></a>
+
+</td><br><br><br>
+</tr>
+</table>
+
+
+
+
+
+
+</form>
+</body>
+</html>

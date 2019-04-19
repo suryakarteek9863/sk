@@ -1,0 +1,114 @@
+<html>
+   <head>
+
+   	<link rel="stylesheet" type="text/css" href="input.css"/>
+   </head>
+
+  <body>
+  	  	<table class="container">
+
+        <form action="pgedu.php" method="Post"  >
+
+
+<th style="color: MidNightBlue o" ><b><i><font size="6">Education Qualification :  </font></i></b></th>
+
+<tr>
+	<td><br><h4 style="color: MidNightBlue"><b><i><font size="5">Post Graduation :  </font></i></b><br></h4></td>
+</tr>
+
+<tr>
+<td><b><i><font size="4">Institution :  <td>
+<td><input type="text" name="pinst" pattern="[A-Za-z ]{1,80}" class="last" required ><td>
+</tr>
+
+<tr>
+<td><b><i><br><font size="4">Year of Passing :   <td>
+<td><input type="text" name="ppass" min="1969" max="2003" pattern="[12][0-9]{3}" class="last" required><td>
+</tr>
+
+<tr>
+<td><b><i><br><font size="4">Percentage :   <td>
+<td><input type="text" name="pperc" class="last" pattern="[0-9.]{2,5}" required><td>
+</tr>
+
+<tr>
+  <td><br><h4 style="color: MidnightBlue"><b><i><font size="5">Graduation :  </font></i></b><br></h4></td>
+</tr>
+
+
+
+
+<tr>
+<td><b><i><font size="4">Institution :  <td>
+<td><input type="text" name="ginst" pattern="[A-Za-z ]{1,80}" class="last" required><td>
+</tr>
+
+<tr>
+<td><b><i><br><font size="4">Year of Passing :   <td>
+<td><input type="text" name="gpass" class="last" min="1969" max="2003" pattern="[12][0-9]{3}" required><td>
+</tr>
+
+<tr>
+<td><b><i><br><font size="4">Percentage :   <td>
+<td><input type="text" name="gperc" class="last" pattern="[0-9.]{2,5}" required><td>
+</tr>
+<tr>
+  <td><br><h4 style="color: MidnightBlue"><b><i><font size="5">Intermediate :  </font></i></b><br></h4></td>
+</tr>
+
+<tr>
+<td><b><i><font size="4">Institution :  <td>
+<td><input type="text" name="iinst" pattern="[A-Za-z ]{1,80}" class="last"  required><td>
+</tr>
+
+<tr>
+<td><b><i><br><font size="4">Year of Passing :   <td>
+<td><input type="text" name="ipass"  class="last" min="1969" max="2003" pattern="[12][0-9]{3}" required><td>
+</tr>
+
+<tr>
+<td><b><i><br><font size="4">Percentage :   <td>
+<td><input type="text" name="iperc" class="last" pattern="[0-9.]{2,5}" required><td>
+</tr>
+<tr>
+  <td><br><h4 style="color: MidnightBlue"><b><i><font size="5">School :  </font></i></b><br></h4></td>
+</tr>
+
+<tr>
+<td><b><i><font size="4">Institution :  <td>
+<td><input type="text" name="sinst" pattern="[A-Za-z ]{1,80}" class="last" required ><td>
+</tr>
+
+<tr>
+<td><b><i><br><font size="4">Year of Passing :   <td>
+<td><input type="text" name="spass" class="last" min="1969" max="2003" pattern="[12][0-9]{3}" required><td>
+</tr>
+
+<tr>
+<td><b><i><br><font size="4">Percentage :   <td>
+<td><input type="text" name="sperc" class="last" pattern="[0-9.]{2,5}" required><td>
+</tr>
+
+
+<tr align="center">
+<td align = "left"><br><input type="reset" value="Reset" class="last" ><td>
+  <td align = "left"><br><input type="button" value="previous" class="last" onclick="location.href='per.html'"><td>
+
+<td align ="right" ><br><input type="submit" value="Next" class="last"  ><td>
+</tr>
+
+</table>
+
+    
+<table class="close">
+  <tr>
+<td><a href="close.php"><b><i><font size="3">logout</i></b></font></a>
+
+</td><br><br><br>
+</tr>
+</table>
+  	
+</form>
+</font>
+  </body>
+  </html>
